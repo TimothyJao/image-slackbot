@@ -25,6 +25,8 @@ class Actions:
         for single in image_details[1]:
             selector += middle + single
 
+        print selector
+
         image = soup.select(selector)[0]
         picture_url = image['src']
         self.slackhelper.post_image(picture_url)
