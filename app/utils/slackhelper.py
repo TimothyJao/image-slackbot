@@ -8,7 +8,7 @@ class SlackHelper:
         self.slack_client = WebClient(self.slack_token)
         self.slack_channel = get_env('SLACK_CHANNEL')
 
-    def post_image(self, msg):
+    def post_image(self, image_url):
         self.slack_client.chat_postMessage()
         return self.slack_client.chat_postMessage(
             channel = self.slack_channel,
@@ -20,7 +20,7 @@ class SlackHelper:
                         "text": "Enjoy your photo!"
                     },
                     "block_id": "image4",
-                    "image_url": "http://placekitten.com/500/500",
+                    "image_url": image_url,
                     "alt_text": "Photo requested by the user."
                 }
             ]
