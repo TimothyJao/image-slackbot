@@ -23,7 +23,7 @@ class Actions:
         class_input[1] = class_input[1].split(" ")
 
         for single in class_input[1]:
-        selector += middle + single
+            selector += middle + single
 
         image = soup.select(selector)[0]
         picture_url = image['src']
