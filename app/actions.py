@@ -24,16 +24,18 @@ class Actions:
 
         for single in image_details[1]:
             selector += middle + single
-        print ("-----------------------------")
-        print (selector)
-        print ("-----------------------------")
 
-        image = soup.select(selector)[0]
-        picture_url = image['src']
-        self.slackhelper.post_image(picture_url)
+        images = soup.select(selector)
+        if len(images) > 0:
+            image = soup.select(selector)[0]
+            picture_url = image['src']
+            self.slackhelper.post_image(picture_url)
 
-        # f = open('image.jpg', 'wb')
-        # f.write(requests.get(picture_url).content)
-        # f.close()
+            # f = open('image.jpg', 'wb')
+            # f.write(requests.get(picture_url).content)
+            # f.close()
 
-        return {"image": 'image.jpg'}
+            return {"image": True}
+        
+        else:
+            return {"image-found": False}
