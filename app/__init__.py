@@ -24,8 +24,7 @@ def create_app(config_name):
 
         response_body = actions.find_image(website, tag, image_details)
 
-        # response = jsonify(response_body)
-        # response.status_code = 200
-        # return response
-        return None
+        response = jsonify(response_body)
+        response.status_code = 200
+        return response
     return app
