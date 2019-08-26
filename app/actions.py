@@ -8,21 +8,21 @@ class Actions:
         self.slackhelper = slackhelper
     
     def find_image(self, website, tag, image_details):
-        response = requests.get(url_input)
+        response = requests.get(website)
         soup = BeautifulSoup(response.text, "html.parser")
 
-        class_input = class_input.split("=")
+        image_details = image_details.split("=")
 
-        if class_input[0] == "class":
+        if image_details[0] == "class":
             middle = "."
-        elif class_input[0] == "id":
+        elif image_details[0] == "id":
             middle = "#"
 
-        selector = tag_input
+        selector = tag
 
-        class_input[1] = class_input[1].split(" ")
+        image_details[1] = image_details[1].split(" ")
 
-        for single in class_input[1]:
+        for single in image_details[1]:
             selector += middle + single
 
         image = soup.select(selector)[0]
