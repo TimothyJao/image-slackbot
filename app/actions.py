@@ -36,4 +36,4 @@ class Actions:
         # f.write(requests.get(picture_url).content)
         # f.close()
 
-        return {"file_found": "found"}
+        return {"image": 'image.jpg'}
