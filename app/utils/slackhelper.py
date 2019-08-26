@@ -9,7 +9,6 @@ class SlackHelper:
         self.slack_channel = get_env('SLACK_CHANNEL')
 
     def post_image(self, image_url):
-        self.slack_client.chat_postMessage()
         return self.slack_client.chat_postMessage(
             channel = self.slack_channel,
             blocks = [
