@@ -24,8 +24,9 @@ class Actions:
 
         for single in image_details[1]:
             selector += middle + single
-
+        print "-----------------------------"
         print selector
+        print "-----------------------------"
 
         image = soup.select(selector)[0]
         picture_url = image['src']
