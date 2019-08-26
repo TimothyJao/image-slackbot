@@ -1,2 +1,2 @@
-web: gunicorn ranti:app
+web: gunicorn slackbot:app
 worker: python worker.py
