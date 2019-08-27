@@ -31,11 +31,7 @@ class Actions:
             picture_url = image['src']
             self.slackhelper.post_image(picture_url)
 
-            # f = open('image.jpg', 'wb')
-            # f.write(requests.get(picture_url).content)
-            # f.close()
-
-            return {"image": True}
+            return {"image_found": True}
         
         else:
-            return {"image-found": False}
+            return {"image_found": False}
