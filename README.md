@@ -10,6 +10,7 @@ Thank you to Abdulqahhar Aminujatto for his [article](https://medium.com/the-and
 
 ## How to Use
 To use this slackbot, go to the designated channel and type: /slackbot (url) (tag) (class=xxxxxx)/(id=xxxxxx)
+<br />
 The spacing is important!
 
 ## Tecnologies
@@ -51,7 +52,7 @@ To install this slackbot in your own slack channel, follow these instructions:
 
 6. Create a new heroku app by using ```heroku create [appname]```
 
-7. Login to your heroku dashboard, select this project, and go to settings. Click on __Reveal Config Vars__ and add the following key-value pairs as shown below.
+7. Login to your heroku dashboard, select this project, and go to settings. Click on __Reveal Config Vars__ and add the following key-value pairs as shown below. The SLACK_CHANNEL can be any channel in your workspace.
 
 <br />
 <br />
