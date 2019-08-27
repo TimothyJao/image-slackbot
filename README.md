@@ -4,7 +4,7 @@ This image slackbot was created as a coding challenge for American Express.
 
 ## Introduction
 
-This slackbot can be called in a slack channel and an image can be retrieved given an url, tag and class/id name. It utilizes a Flask server which calls slack APIs and uses beautifulsoup to parse a website.
+This slackbot can be called in a slack channel and an image will be retrieved when given an url, tag and class/id name. It utilizes a Flask server which calls Slack APIs and uses Beautiful Soup to parse a website.
 
 Thank you to Abdulqahhar Aminujatto for his [article](https://medium.com/the-andela-way/how-to-build-a-task-notification-bot-for-slack-with-python-part-1-333cb50985f4) that taught me how to set up a slackbot with Flask.
 
@@ -46,7 +46,7 @@ To install this slackbot in your own slack channel, follow these instructions:
 <br />
 <br />
 
-4. Create a Heroku account if you don't have one already, install the Heroku Toolbelt CLI and use ```heroku login``` to login to the heroku CLI
+4. Create a Heroku account if you don't have one already, install the Heroku Toolbelt CLI and use ```heroku login``` in your terminal to login to the heroku CLI
 
 5. Fork this repo to have your own clone of the code. Create a new git repository with ```git init```, add the new content with ```git add .``` and commit the changes with a message using ```git commit -m "(enter a message of your choice here)"```
 
