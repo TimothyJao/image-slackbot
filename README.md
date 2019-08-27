@@ -21,3 +21,17 @@ Here we use the example given to us in the prompt to find the image using the sl
 <img src="./assets/images/correct-image1.gif" align="center">
 <br />
 <br />
+
+Another example of the slackbot correctly working to grab Abdulqahhar's image from his medium post
+<br />
+<br />
+<img src="./assets/images/correct-image2.gif" align="center">
+<br />
+<br />
+
+An example with an input where the img does not exist. Notice that the image-found is returned as *false*.
+<br />
+<br />
+<img src="./assets/images/incorrect-image.gif" align="center">
+<br />
+<br />
