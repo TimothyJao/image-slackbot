@@ -45,9 +45,27 @@ To install this slackbot in your own slack channel, follow these instructions:
 
 1. Go to [your apps](https://api.slack.com/apps) on Slack, create a new app and fill out the information.
 
+<br />
+<br />
+<img src="./assets/images/Capture.JPG" align="center">
+<br />
+<br />
+
 2. Click on bot users and add a new bot users using whatever name and username you desire.
 
+<br />
+<br />
+<img src="./assets/images/add_bot_user.JPG" align="center">
+<br />
+<br />
+
 3. Go to Install App under settings and install the app under your slack workspace. Record the OAuth Access token and Bot User OAuth Access token.
+
+<br />
+<br />
+<img src="./assets/images/install_app.JPG" align="center">
+<br />
+<br />
 
 4. Fork this repo to have your own clone of the code. Create a new git repository with ```git init```, add the new content with ```git add .``` and commit the changes with a message using ```git commit -m "(enter a message of your choice here)"```
 
@@ -59,6 +77,13 @@ To install this slackbot in your own slack channel, follow these instructions:
 
 8. Push the code by runnin ```git push heroku master```
 
-9. Go to the app's page and select *Slash Commands* under __Features__. Select *Create New Command* and fill out the information.\
+9. Go to the app's page and select *Slash Commands* under __Features__. Select *Create New Command* and fill out the information. The url should look something like: ```http://(your-apps-name).herokuapp.com/image-bot```
+
+<br />
+<br />
+<img src="./assets/images/environment-variables.JPG" align="center">
+<br />
+<br />
+
 
 The slackbot should now be running on your own workspace! Test it out and grab images from online!
