@@ -6,13 +6,15 @@ from app.actions import Actions
 from re import match
 
 def create_app(config_name):
-
     app = FlaskAPI(__name__, instance_relative_config = False)
     app.config.from_object(app_env[config_name])
     app.config.from_pyfile('../config/env.py')
 
     @app.route("/image-bot", methods=["POST"])
     def imagebot():
+        """
+        Grabs the data sent through the slackbot and calls the webcrawler with the given information
+        """
         command_text = request.data.get('text')
         command_text = command_text.split(' ')
         slackhelper = SlackHelper()

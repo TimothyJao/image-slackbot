@@ -98,3 +98,10 @@ An example with an input where the img does not exist. Notice that the image-fou
 <br />
 <br />
 
+## Observations and (Future) Improvements
+
+1. Currently, my program cannot fetch images that are "lazy loaded". This means that the images are not loaded in the DOM until the user scrolls to it. Thus, the webscraper part of the program would not be able to find that image. There is a [way](https://stackoverflow.com/questions/40777864/retrieving-all-information-from-page-beautifulsoup) to extract the lazy loaded images but I found the solution on the day of the deadline and I did not want to change code last second.
+
+2. Some of the images' src were relative paths so I could not access them. I do not think there was a way around this since the file is hidden from public view. In addition, some websites do not allow web scrapers which prevents this app from working.
+
+3. If the slackbot input is not in the correct format, a 500 server error is thrown. I did not have time to handle the numerous cases that may occur. It would most likely just require multiple if statements to check if the input is valid or not.
